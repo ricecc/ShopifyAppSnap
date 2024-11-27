@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "19739f846d63ba1306338790a54ea706"
+name = "snap"
+handle = "snap"
+application_url = "https://describing-spies-bean-vacations.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "learnin-app-dev.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customer_events,read_products,write_checkouts,write_online_store_navigation,write_pixels"
+
+[auth]
+redirect_urls = [
+  "https://describing-spies-bean-vacations.trycloudflare.com/auth/callback",
+  "https://describing-spies-bean-vacations.trycloudflare.com/auth/shopify/callback",
+  "https://describing-spies-bean-vacations.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
